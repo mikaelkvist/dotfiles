@@ -1,0 +1,11 @@
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.smartindent = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.fileencoding = 'utf-8'
+vim.g.mapleader = ' '
+-- vim.g.swap = false
+vim.opt.termguicolors = true
