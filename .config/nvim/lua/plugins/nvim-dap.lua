@@ -53,6 +53,12 @@ M.config = function()
 			args = {};
 			env = {};
 			terminalKind = "integrated";
+			pathMappings = {
+				{
+					localRoot = "${workspaceFolder}",
+					remoteRoot = "/work/bash"
+				}
+			};
 		}
 	}
 

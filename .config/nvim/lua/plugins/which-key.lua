@@ -13,4 +13,6 @@ M.keys = {
 	{ '?', '<cmd>WhichKey<cr>', desc = 'Which-Key' },
 }
 
+M.lazy = false
+
 return M

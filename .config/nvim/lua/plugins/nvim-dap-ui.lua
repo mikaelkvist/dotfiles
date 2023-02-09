@@ -29,4 +29,6 @@ M.keys = {
 	{ '<leader>dh', '<cmd>lua require("dap.ui.widgets").hover()<cr>', desc = 'Dap hover' },
 }
 
+M.lazy = false
+
 return M

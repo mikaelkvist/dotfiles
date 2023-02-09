@@ -76,7 +76,7 @@ M.keys = {
 	{ '<leader>fw', '<cmd>Telescope grep_string<cr>', desc = 'Grep string' },
 	{ '<leader>fb', '<cmd>Telescope buffers<cr>', desc = 'Buffers' },
 	{ '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = 'Help tags' },
-	{ '<leader>fc', '<cmd>Telescope my_colors<cr>', desc = 'Installed colorschemes' },
+	{ '<leader>fc', '<cmd>Telescope colorscheme<cr>', desc = 'Browse colorschemes' },
 	{ '<leader>fr', '<cmd>Telescope resume<cr>', desc = 'Resume' },
 	{ '<leader>fm', '<cmd>Telescope marks<cr>', desc = 'Marks' },
 
@@ -89,5 +89,7 @@ M.keys = {
 	{ '<leader>gi', '<cmd>Telescope lsp_implementations<cr>', desc = 'Implementations' },
 	{ '<leader>gt', '<cmd>Telescope lsp_type_definitions<cr>', desc = 'Type definitions' },
 }
+
+M.lazy = false
 
 return M

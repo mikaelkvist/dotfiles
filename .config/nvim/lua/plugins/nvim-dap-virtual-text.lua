@@ -3,7 +3,6 @@ local M = { 'theHamsta/nvim-dap-virtual-text' }
 M.dependencies = {
     'mfussenegger/nvim-dap',
     'nvim-treesitter/nvim-treesitter',
-    'theHamsta/nvim-dap-virtual-text',
 }
 
 M.config = {
