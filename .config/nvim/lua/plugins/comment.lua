@@ -1,6 +1,6 @@
 local M = { 'numToStr/Comment.nvim' }
 
-M.config = {
+M.opts = {
 	toggler = {
 		line = '<leader>c',
 	},

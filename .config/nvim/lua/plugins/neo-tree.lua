@@ -6,7 +6,7 @@ M.dependencies = {
 	"MunifTanjim/nui.nvim",
 }
 
-M.config = {
+M.opts = {
 	close_if_last_window = true,
 	filesystem = {
 		follow_current_file = true,

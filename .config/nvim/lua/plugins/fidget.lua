@@ -4,7 +4,7 @@ M.dependencies = {
 	'neovim/nvim-lspconfig',
 }
 
-M.config = {
+M.opts = {
 	text = {
 		spinner = 'dots',
 		-- spinner = 'dots_pulse',

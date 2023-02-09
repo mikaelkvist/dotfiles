@@ -1,6 +1,6 @@
 local M = { 'ray-x/lsp_signature.nvim' }
 
-M.config = {
+M.opts = {
 	bind = true,
 	hint_prefix = "🦊 ",
 	handler_opts = {

@@ -1,6 +1,6 @@
 local M = { 'folke/which-key.nvim' }
 
-M.config = {
+M.opts = {
 	window = {
 		border = 'rounded',
 	},

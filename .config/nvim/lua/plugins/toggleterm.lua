@@ -1,6 +1,6 @@
 local M = { 'akinsho/toggleterm.nvim' }
 
-M.config = {
+M.opts = {
 	shade_terminals = true,
 	winbar = {
     enabled = true,

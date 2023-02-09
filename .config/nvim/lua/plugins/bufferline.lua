@@ -2,7 +2,7 @@ local M = { 'akinsho/bufferline.nvim' }
 
 M.lazy = false
 
-M.config = {
+M.opts = {
 	options = {
 		separator_style = 'padded',
 		diagnostics = 'nvim_lsp',
