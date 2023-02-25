@@ -7,9 +7,7 @@ M.dependencies = {
 	'hrsh7th/cmp-cmdline',
 	'L3Mon4D3/Luasnip',
 	'saadparwaiz1/cmp_luasnip',
-	'rafamadriz/friendly-snippets',
 }
-
 M.config = function()
 	vim.o.completeopt = 'menuone,noselect'
 	local cmp = require('cmp')

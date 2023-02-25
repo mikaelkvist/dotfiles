@@ -6,15 +6,50 @@ M.config = function()
 
 	local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
 
-	parser_configs.kotlin = {
+	parser_configs.c = {
 		install_info = {
-			url = "~/.local/share/nvim/nvim-treesitter/source/tree-sitter-kotlin",
+			url = "~/.local/share/nvim/nvim-treesitter/source/tree-sitter-c",
 			files = { "src/parser.c" },
 		},
-		filetype = "kt",
+		filetype = "c",
+	}
+	parser_configs.cpp = {
+		install_info = {
+			url = "~/.local/share/nvim/nvim-treesitter/source/tree-sitter-cpp",
+			files = { "src/parser.c" },
+		},
+		filetype = "cpp",
+	}
+	parser_configs.python = {
+		install_info = {
+			url = "~/.local/share/nvim/nvim-treesitter/source/tree-sitter-python",
+			files = { "src/parser.c" },
+		},
+		filetype = "py",
+	}
+	parser_configs.lua = {
+		install_info = {
+			url = "~/.local/share/nvim/nvim-treesitter/source/tree-sitter-lua",
+			files = { "src/parser.c" },
+		},
+		filetype = "lua",
+	}
+	parser_configs.bash = {
+		install_info = {
+			url = "~/.local/share/nvim/nvim-treesitter/source/tree-sitter-bash",
+			files = { "src/parser.c" },
+		},
+		filetype = "sh",
+	}
+	parser_configs.fish = {
+		install_info = {
+			url = "~/.local/share/nvim/nvim-treesitter/source/tree-sitter-fish",
+			files = { "src/parser.c" },
+		},
+		filetype = "fish",
 	}
 	require('nvim-treesitter.configs').setup({
-		ensure_installed = { "c", "cpp", "python", "bash", "lua", "help", "fish", "kotlin" },
+		ensure_installed = { "c", "cpp", "python", "lua", "bash", "fish", },
 		sync_install = true,
 		auto_install = false,
 		parser_install_dir = '~/.local/share/nvim/nvim-treesitter'

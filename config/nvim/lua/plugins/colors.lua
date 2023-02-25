@@ -3,7 +3,6 @@ return {
 	{ 'EdenEast/nightfox.nvim', lazy=true },
 	{ 'savq/melange', lazy=true },
 	{ 'ellisonleao/gruvbox.nvim', lazy=true },
-	{ 'catppuccin/nvim', lazy=true },
 	{ 'joshdick/onedark.vim', lazy=true },
 	{ 'tomasr/molokai', lazy=true },
 	{ 'ray-x/aurora', lazy=true, config = function()
