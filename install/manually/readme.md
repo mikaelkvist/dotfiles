@@ -1,6 +1,8 @@
 # Fish, tmux, neovim setup checklist
 Follow this checklist to setup tmux, fish and neovim for development in bash, python, c/c++.
 
+This document might not use the latest version of programs and plugins, but at least something that works.
+
 ## Shell
 - [ ] z
     Autojump between directories
@@ -25,46 +27,37 @@ Follow this checklist to setup tmux, fish and neovim for development in bash, py
 ## Tmux
 - [ ] tmux
 - [ ] tmux plugins
+    - [ ] create plugins directory
+        ```{sh}
+        mkdir -p ~/.tmux/plugins
+        ```
     - [ ]  Tmux plugin manager
         Installs and loads tmux plugins
         ```{sh}
-        git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+        wget https://github.com/tmux-plugins/tpm/archive/refs/tags/v3.1.0.zip -O tpm-v3.1.0.zip
+        unzip tpm-v3.1.0.zip -d ~/.tmux/plugins
+        mv ~/.tmux/plugins/tpm* ~/.tmux/plugins/tpm
         ```
     - [ ] tmux-resurrect
         Save and restore tmux environment
         ```{sh}
-        git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/tmux-resurrect
-        (
-        cd ~/.tmux/plugins/tmux-resurrect || exit 1;
-        git checkout 6be2f34b5f06c8a6a23dc3dc835e69c132d58a18;
-        )
+        wget https://github.com/tmux-plugins/tmux-resurrect/archive/refs/tags/v4.0.0.zip -O tmux-resurrect-v4.0.0.zip
+        unzip tmux-resurrect-v4.0.0.zip -d ~/.tmux/plugins
+        mv ~/.tmux/plugins/tmux-resurrect* ~/.tmux/plugins/tmux-resurrect
         ```
     - [ ] tmux-continuum
         Continuous saving of tmux environment
         ```{sh}
-        git clone https://github.com/tmux-plugins/tmux-continuum ~/.tmux/plugins/tmux-continuum
-        (
-        cd ~/.tmux/plugins/tmux-continuum || exit 1;
-        git checkout 44e6be6222a062809d0377e2b05dded900dc260f;
-        )
+        wget https://github.com/tmux-plugins/tmux-continuum/archive/refs/tags/v3.1.0.zip -O tmux-continuum-v3.1.0.zip
+        unzip tmux-continuum-v3.1.0.zip -d ~/.tmux/plugins
+        mv ~/.tmux/plugins/tmux-continuum* ~/.tmux/plugins/tmux-continuum
         ```
     - [ ] tmux-sensible
         Nice tmux options options.
         ```{sh}
-        git clone https://github.com/tmux-plugins/tmux-sensible ~/.tmux/plugins/tmux-sensible
-        (
-        cd ~/.tmux/plugins/tmux-sensible || exit 1;
-        git checkout  5d089e418efb1a00f47654014ed085deb3d0c878
-        )
-        ```
-    - [ ] tmux-vim-navigator
-        Instruction from tmux.nvim, used for navigation between tmu and neovim panes.
-        ```{sh}
-        git clone https://github.com/christoomey/vim-tmux-navigator ~/.tmux/plugins/vim-tmux-navigator
-        (
-        cd ~/.tmux/plugins/vim-tmux-navigator || exit 1;
-        git checkout bd4c38be5b4882991494cf77c0601a55bc45eebf
-        )
+        wget https://github.com/tmux-plugins/tmux-sensible/archive/refs/tags/v3.0.0.zip -O tmux-sensible-v3.0.0.zip
+        unzip tmux-sensible-v3.0.0.zip -d ~/.tmux/plugins
+        mv ~/.tmux/plugins/tmux-sensible* ~/.tmux/plugins/tmux-sensible
         ```
 
 ## Neovim
