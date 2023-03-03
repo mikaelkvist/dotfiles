@@ -5,8 +5,6 @@ M.dependencies = {
 	'hrsh7th/cmp-buffer',
 	'hrsh7th/cmp-path',
 	'hrsh7th/cmp-cmdline',
-	'L3Mon4D3/Luasnip',
-	'saadparwaiz1/cmp_luasnip',
 }
 M.config = function()
 	vim.o.completeopt = 'menuone,noselect'
@@ -37,7 +35,6 @@ M.config = function()
 			{ name = 'nvim_lua' },
 			{ name = 'buffer' },
 			{ name = 'path' },
-			{ name = 'luasnip' },
 		}),
 		window = {
 			documentation 	= cmp.config.window.bordered(),

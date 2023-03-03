@@ -1,10 +1,6 @@
 return {
 	{ 'folke/tokyonight.nvim', lazy=true },
-	{ 'EdenEast/nightfox.nvim', lazy=true },
-	{ 'savq/melange', lazy=true },
 	{ 'ellisonleao/gruvbox.nvim', lazy=true },
-	{ 'joshdick/onedark.vim', lazy=true },
-	{ 'tomasr/molokai', lazy=true },
 	{ 'ray-x/aurora', lazy=true, config = function()
 		vim.g.aurora_italic = 1
 		vim.g.aurora_transparent = 1

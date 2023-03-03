@@ -3,7 +3,7 @@ local M = { 'neovim/nvim-lspconfig' }
 M.dependencies = {
 	'hrsh7th/nvim-cmp',
 	'hrsh7th/cmp-nvim-lsp',
-	{ 'folke/neoconf.nvim', config = true },
+	-- { 'folke/neoconf.nvim', config = true },
 	{ 'folke/neodev.nvim', config = true },
 	{ 'SmiteshP/nvim-navic' },
 }
@@ -30,7 +30,7 @@ M.config = function()
 		end
 	end
 
-	lspconfig.sumneko_lua.setup({
+	lspconfig.lua_ls.setup({
 		capabilities = lsp_defaults.capabilities,
 		on_attach = on_attach,
 		settings = {

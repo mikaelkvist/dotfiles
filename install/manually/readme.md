@@ -5,8 +5,17 @@ This document might not use the latest version of programs and plugins, but at l
 
 ## Shell
 - [ ] git
+    ```{sh}
+    sudo apt install -y git
+    ```
 - [ ] ripgrep
+    ```{sh}
+    sudo apt install -y ripgrep
+    ```
 - [ ] make
+    ```{sh}
+    sudo apt install -y make
+    ```
 
 ## Dotfiles
 - [ ] Dotfiles
@@ -19,6 +28,9 @@ This document might not use the latest version of programs and plugins, but at l
 
 ## Tmux
 - [ ] tmux
+    ```{sh}
+    sudo apt install -y tmux
+    ```
 - [ ] tmux plugins
     - [ ] create plugins directory
         ```{sh}
@@ -67,12 +79,14 @@ This document might not use the latest version of programs and plugins, but at l
     ```
 ### Neovim core plugins
 - [ ] lazy
+    Neovim plugin manager.
     ```{sh}
     wget https://github.com/folke/lazy.nvim/archive/refs/tags/v9.8.5.tar.gz -O lazy.nvim-v9.8.5.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/lazy.nvim
     tar -zxf lazy.nvim-v9.8.5.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/lazy.nvim
     ```
 - [ ] neovim-session-manager
+    Save and restore neovim sessions.
     ```{sh}
     wget https://github.com/Shatur/neovim-session-manager/archive/e7a2cbf56b5fd3a223f2774b535499fc62eca6ef.tar.gz -O neovim-session-manager-e7a2cbf56b5fd3a223f2774b535499fc62eca6ef.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/neovim-session-manager
@@ -80,60 +94,70 @@ This document might not use the latest version of programs and plugins, but at l
 .
     ```
 - [ ] telescope
+    General finder/picker.
     ```{sh}
-    wget https://github.com/nvim-telescope/telescope.nvim/archive/refs/tags/v0.1.1.tar.gz -O telescope.nvim-v0.1.1.tar.gz
+    wget https://github.com/nvim-telescope/telescope.nvim/archive/refs/tags/0.1.1.tar.gz -O telescope.nvim-0.1.1.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/telescope.nvim
-    tar -zxf telescope.nvim-v0.1.1.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/telescope.nvim
+    tar -zxf telescope.nvim-0.1.1.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/telescope.nvim
     ```
 - [ ] tmux
+    Integration with tmux.
     ```{sh}
     wget https://github.com/aserowy/tmux.nvim/archive/feafcf8f48c49c720ee64e745648d69d42cb9c5a.tar.gz -O tmux.nvim-feafcf8f48c49c720ee64e745648d69d42cb9c5a.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/tmux.nvim
     tar -zxf tmux.nvim-feafcf8f48c49c720ee64e745648d69d42cb9c5a.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/tmux.nvim
     ```
 - [ ] neo-tree
+    Directory tree explorer.
     ```{sh}
     wget https://github.com/nvim-neo-tree/neo-tree.nvim/archive/refs/tags/2.51.tar.gz -O neo-tree.nvim-2.51.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/neo-tree.nvim
     tar -zxf neo-tree.nvim-2.51.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/neo-tree.nvim
     ```
 - [ ] bufferline 
+    View buffers as tabs.
     ```{sh}
     wget https://github.com/akinsho/bufferline.nvim/archive/refs/tags/v3.3.0.tar.gz -O bufferline.nvim-v3.3.0.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/bufferline.nvim
     tar -zxf bufferline.nvim-v3.3.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/bufferline.nvim
     ```
 - [ ] lualine
+    Customizable status bar.
     ```{sh}
     wget https://github.com/nvim-lualine/lualine.nvim/archive/e99d733e0213ceb8f548ae6551b04ae32e590c80.tar.gz -O lualine.nvim-e99d733e0213ceb8f548ae6551b04ae32e590c80.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/lualine.nvim
     tar -zxf lualine.nvim-e99d733e0213ceb8f548ae6551b04ae32e590c80.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/lualine.nvim
     ```
 - [ ] Comment
+    Shortcut for toggle comments.
     ```{sh}
     wget https://github.com/numToStr/Comment.nvim/archive/refs/tags/v0.7.0.tar.gz -O Comment.nvim-v0.7.0.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/Comment.nvim
     tar -zxf Comment.nvim-v0.7.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/Comment.nvim
     ```
 - [ ] which-key
+    Show set keymaps.
     ```{sh}
     wget https://github.com/folke/which-key.nvim/archive/refs/tags/v1.1.1.tar.gz -O which-key.nvim-v1.1.1.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/which-key.nvim
     tar -zxf which-key.nvim-v1.1.1.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/which-key.nvim
     ```
 - [ ] nui
+    Neovim UI library used by e.g. neo-tree
     ```{sh}
     wget https://github.com/MunifTanjim/nui.nvim/archive/0dc148c6ec06577fcf06cbab3b7dac96d48ba6be.tar.gz -O nui.nvim-0dc148c6ec06577fcf06cbab3b7dac96d48ba6be.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/nui.nvim
     tar -zxf nui.nvim-0dc148c6ec06577fcf06cbab3b7dac96d48ba6be.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nui.nvim
     ```
 - [ ] nvim-web-devicons
+    Nice icons, used by e.g. neo-tree.
     ```{sh}
     wget https://github.com/nvim-tree/nvim-web-devicons/archive/c2c2317f356c8b7da0252f5da758f71bb60bb6b2.tar.gz -O nvim-web-devicons-c2c2317f356c8b7da0252f5da758f71bb60bb6b2.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/nvim-web-devicons
     tar -zxf nvim-web-devicons-c2c2317f356c8b7da0252f5da758f71bb60bb6b2.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-web-devicons
     ```
 - [ ] plenary
+    Utility functions, used by e.g. telescope.
     ```{sh}
     wget https://github.com/nvim-lua/plenary.nvim/archive/v0.1.3.tar.gz -O plenary.nvim-v0.1.3.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/plenary.nvim
@@ -142,31 +166,35 @@ This document might not use the latest version of programs and plugins, but at l
 
 ### Neovim nice plugins
 - [ ] telescope-ui-select
+    Perform normal selections in telescope UI.
     ```{sh}
     wget https://github.com/nvim-telescope/telescope-ui-select.nvim/archive/62ea5e58c7bbe191297b983a9e7e89420f581369.tar.gz -O telescope-ui-select.nvim-62ea5e58c7bbe191297b983a9e7e89420f581369.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/telescope-ui-select.nvim
     tar -zxf telescope-ui-select.nvim-62ea5e58c7bbe191297b983a9e7e89420f581369.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/telescope-ui-select.nvim
     ```
 - [ ] zen-mode
+    Hide everything but the code pane.
     ```{sh}
-    wget https://github.com/zen-mode.nvim/archive/refs/tags/v1.1.0.tar.gz -O zen-mode.nvim-v1.1.0.tar.gz
+    wget https://github.com/folke/zen-mode.nvim/archive/refs/tags/v1.1.0.tar.gz -O zen-mode.nvim-v1.1.0.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/zen-mode.nvim
     tar -zxf zen-mode.nvim-v1.1.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/zen-mode.nvim
     ```
 - [ ] indent-blankline
+    Show indentations.
     ```{sh}
     wget https://github.com/lukas-reineke/indent-blankline.nvim/archive/refs/tags/v2.20.4.tar.gz -O indent-blankline.nvim-v2.20.4.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/indent-blankline.nvim
     tar -zxf indent-blankline.nvim-v2.20.4.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/indent-blankline.nvim
     ```
 - [ ] nvim-colorizer
+    Set color background for hex colors.
     ```{sh}
     wget https://github.com/norcalli/nvim-colorizer.lua/archive/36c610a9717cc9ec426a07c8e6bf3b3abcb139d6.tar.gz -O nvim-colorizer.lua-36c610a9717cc9ec426a07c8e6bf3b3abcb139d6.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/nvim-colorizer.lua
     tar -zxf nvim-colorizer.lua-36c610a9717cc9ec426a07c8e6bf3b3abcb139d6.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-colorizer.lua
     ```
 - [ ] nvim-treesitter
-    Tree sitter is used for syntax highlighting in Neovim
+    Tree sitter is used for syntax highlighting in Neovim.
     - [ ] nvim plugin
         ```{sh}
         wget https://github.com/nvim-treesitter/nvim-treesitter/archive/refs/tags/v0.8.5.2.tar.gz -O nvim-treesitter-v0.8.5.2.tar.gz
@@ -181,18 +209,6 @@ This document might not use the latest version of programs and plugins, but at l
         chmod +x tree-sitter-linux-x64
         sudo mv tree-sitter-linux-x64 /usr/local/bin/tree-sitter
         ```
-- [ ] vim-bookmarks
-    ```{sh}
-    wget https://github.com/MattesGroeger/vim-bookmarks/archive/9cc5fa7ecc23b052bd524d07c85356c64b92aeef.tar.gz -O vim-bookmarks-9cc5fa7ecc23b052bd524d07c85356c64b92aeef.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/vim-bookmarks
-    tar -zxf vim-bookmarks-9cc5fa7ecc23b052bd524d07c85356c64b92aeef.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/vim-bookmarks
-    ```
-- [ ] telescope-vim-bookmarks
-    ```{sh}
-    wget https://github.com/tom-anders/telescope-vim-bookmarks.nvim/archive/92498cbf7c127dea37c3d27117b60dd7ab9baef4.tar.gz -O telescope-vim-bookmarks.nvim-92498cbf7c127dea37c3d27117b60dd7ab9baef4.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/telescope-vim-bookmarks
-    tar -zxf telescope-vim-bookmarks.nvim-92498cbf7c127dea37c3d27117b60dd7ab9baef4.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/telescope-vim-bookmarks.nvim
-    ```
 
 ### Neovim git plugins
 - [ ] diffview
@@ -215,41 +231,11 @@ This document might not use the latest version of programs and plugins, but at l
     ```
 
 ### Neovim colorscheme plugins
-- [ ] aurora
-    ```{sh}
-    wget https://github.com/ray-x/aurora/archive/7c1be58365428ef18c3621bacc5aaf188f8a4b9e.tar.gz -O aurora-7c1be58365428ef18c3621bacc5aaf188f8a4b9e.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/aurora
-    tar -zxf aurora-7c1be58365428ef18c3621bacc5aaf188f8a4b9e.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/aurora
-    ```
 - [ ] gruvbox
     ```{sh}
     wget https://github.com/ellisonleao/gruvbox.nvim/archive/3e31f9ab01fed42ebac75738c681daacb8c82bff.tar.gz -O gruvbox.nvim-3e31f9ab01fed42ebac75738c681daacb8c82bff.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/gruvbox.nvim
     tar -zxf gruvbox.nvim-3e31f9ab01fed42ebac75738c681daacb8c82bff.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/gruvbox.nvim
-    ```
-- [ ] kanagawa
-    ```{sh}
-    wget https://github.com/rebelot/kanagawa.nvim/archive/4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz -O kanagawa.nvim-4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/kanagawa.nvim
-    tar -zxf kanagawa.nvim-4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/kanagawa.nvim
-    ```
-- [ ] melange
-    ```{sh}
-    wget https://github.com/savq/melange-nvim/archive/refs/tags/2023-01-14.tar.gz -O melange-nvim-2023-01-14.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/melange
-    tar -zxf melange-nvim-2023-01-14.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/melange
-    ```
-- [ ] molokai
-    ```{sh}
-    wget https://github.com/tomasr/molokai/archive/c67bdfcdb31415aa0ade7f8c003261700a885476.tar.gz -O molokai-c67bdfcdb31415aa0ade7f8c003261700a885476.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/molokai
-    tar -zxf molokai-c67bdfcdb31415aa0ade7f8c003261700a885476.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/molokai
-    ```
-- [ ] nightfox
-    ```{sh}
-    wget https://github.com/EdenEast/nightfox.nvim/archive/refs/tags/v.3.3.0.tar.gz -O nightfox.nvim-v3.3.0.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/nightfox.nvim
-    tar -zxf nightfox.nvim-v3.3.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nightfox.nvim
     ```
 - [ ] nordic
     ```{sh}
@@ -257,11 +243,17 @@ This document might not use the latest version of programs and plugins, but at l
     mkdir -p ~/.local/share/nvim/lazy/nordic.nvim
     tar -zxf nordic.nvim-b4dbc727ec33f88d2b245967873a8c490037d01b.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nordic.nvim
     ```
-- [ ] onedark
+- [ ] kanagawa
     ```{sh}
-    wget https://github.com/joshdick/onedark.vim/archive/b6b5ffe31a195a3077338d7a506b905e4a51590f.tar.gz -O onedark.vim-b6b5ffe31a195a3077338d7a506b905e4a51590f.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/onedark.vim
-    tar -zxf onedark.vim-b6b5ffe31a195a3077338d7a506b905e4a51590f.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/onedark.vim
+    wget https://github.com/rebelot/kanagawa.nvim/archive/4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz -O kanagawa.nvim-4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz
+    mkdir -p ~/.local/share/nvim/lazy/kanagawa.nvim
+    tar -zxf kanagawa.nvim-4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/kanagawa.nvim
+    ```
+- [ ] aurora
+    ```{sh}
+    wget https://github.com/ray-x/aurora/archive/7c1be58365428ef18c3621bacc5aaf188f8a4b9e.tar.gz -O aurora-7c1be58365428ef18c3621bacc5aaf188f8a4b9e.tar.gz
+    mkdir -p ~/.local/share/nvim/lazy/aurora
+    tar -zxf aurora-7c1be58365428ef18c3621bacc5aaf188f8a4b9e.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/aurora
     ```
 - [ ] tokyonight
     ```{sh}
@@ -273,7 +265,7 @@ This document might not use the latest version of programs and plugins, but at l
 ### Neovim completion plugins
 - [ ] nvim-cmp
     ```{sh}
-    wget https://github.com/hrsh7th/nvim-cmp/archive/01f697a68905f9dcae70960a9eb013695a17f9a2.tar.gz -O nvim-tmp-01f697a68905f9dcae70960a9eb013695a17f9a2.tar.gz
+    wget https://github.com/hrsh7th/nvim-cmp/archive/01f697a68905f9dcae70960a9eb013695a17f9a2.tar.gz -O nvim-cmp-01f697a68905f9dcae70960a9eb013695a17f9a2.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/nvim-cmp
     tar -zxf nvim-cmp-01f697a68905f9dcae70960a9eb013695a17f9a2.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-cmp
     ```
@@ -294,19 +286,6 @@ This document might not use the latest version of programs and plugins, but at l
     wget https://github.com/hrsh7th/cmp-path/archive/91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz -O cmp-path-91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/cmp-path
     tar -zxf cmp-path-91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/cmp-path
-    ```
-### Neovim snippets plugins
-- [ ] Luasnip
-    ```{sh}
-    wget https://github.com/L3MON4D3/Luasnip/archive/refs/tags/v1.2.1.tar.gz -O Luasnip-v1.2.1.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/Luasnip
-    tar -zxf Luasnip-v1.2.1.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/Luasnip
-    ```
-- [ ] cmp_luasnip
-    ```{sh}
-    wget https://github.com/saadparwaiz1/cmp_luasnip/archive/18095520391186d634a0045dacaa346291096566.tar.gz -O cmp_luasnip-18095520391186d634a0045dacaa346291096566.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/cmp_luasnip
-    tar -zxf cmp_luasnip-18095520391186d634a0045dacaa346291096566.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/cmp_luasnip
     ```
 
 ### Neovim tooling plugins
@@ -446,9 +425,18 @@ This document might not use the latest version of programs and plugins, but at l
         tar -zxf tree-sitter-cpp-v0.20.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-cpp
         ```
     - [ ] gcc
+        ```{sh}
+        sudo apt install -y gcc
+        ```
     - [ ] g++
+        ```{sh}
+        sudo apt install -y g++
+        ```
     - [ ] bear
         create compile_command-file used in LSP servers
+        ```{sh}
+        sudo apt install -y bear
+        ```
     - [ ] clangd
         LSP server to navigate and find error in code
         ```{sh}
@@ -459,6 +447,9 @@ This document might not use the latest version of programs and plugins, but at l
         ```
     - [ ] gdb
         debugger
+        ```{sh}
+        sudo apt install -y gdb
+        ```
     - [ ] cpptools
         debug adapter
         ```{sh}
@@ -475,10 +466,25 @@ This document might not use the latest version of programs and plugins, but at l
         tar -zxf tree-sitter-python-v0.20.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-python
         ```
     - [ ] pip
+        ```{sh}
+        sudo apt install -y pip
+        ```
     - [ ] python3-venv
+        ```{sh}
+        sudo apt install -y python3-venv
+        ```
     - [ ] flake8
+        ```{sh}
+        sudo apt install -y flake8
+        ```
     - [ ] mypy
+        ```{sh}
+        sudo apt install -y mypy
+        ```
     - [ ] pylint
+        ```{sh}
+        sudo apt install -y pylint
+        ```
     - [ ] pyright
         LSP server to navigate and find error in code
         ```{sh}
@@ -492,12 +498,14 @@ This document might not use the latest version of programs and plugins, but at l
     - [ ] debugpy
         debugger and debug adapter
         ```{sh}
+        wget https://files.pythonhosted.org/packages/f9/35/325e53d2a75b28777c28e790f84ea1ee45e1ecc00ae76550a53872a541f9/debugpy-1.6.6-py2.py3-none-any.whl
         wget https://files.pythonhosted.org/packages/1f/19/345c21f6b62acf556c39e4358a22b0ad868fecb462c1041c13513d229b33/debugpy-1.6.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
 
         mkdir -p ~/.local/share/nvim/mason/packages/debugpy
         python3 -m venv ~/.local/share/nvim/mason/packages/debugpy/venv
         ~/.local/share/nvim/mason/packages/debugpy/venv/bin/python -m pip install debugpy-1.6.6*.whl
 
+        // without any space at the start of the lines
         cat <<EOF >> ~/.local/share/nvim/mason/packages/debugpy/debugpy
         #!/usr/bin/env bash
 
@@ -505,6 +513,7 @@ This document might not use the latest version of programs and plugins, but at l
         EOF
         chmod +x ~/.local/share/nvim/mason/packages/debugpy/debugpy
 
+        // without any space at the start of the lines
         cat <<EOF >> ~/.local/share/nvim/mason/packages/debugpy/debugpy-adapter
         #!/usr/bin/env bash
 
@@ -524,9 +533,12 @@ This document might not use the latest version of programs and plugins, but at l
         ```{sh}
         wget https://github.com/tree-sitter/tree-sitter-bash/archive/refs/tags/v0.19.0.tar.gz -O tree-sitter-bash-v0.19.0.tar.gz
         mkdir -p ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-bash
-        tar -zxf tree-sitter-bash-v0.19.0.tar.gz --strip-components 1 -C   /.local/share/nvim/nvim-treesitter/source/tree-sitter-bash
+        tar -zxf tree-sitter-bash-v0.19.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-bash
         ```
     - [ ] shellcheck
+        ```{sh}
+        sudo apt install -y shellcheck
+        ```
     - [ ] bash-language-server
         LSP server to navigate and find error in code
         ```{sh}
@@ -537,6 +549,7 @@ This document might not use the latest version of programs and plugins, but at l
         cd ~/.local/share/nvim/mason/packages/bash-language-server || exit 1;
         npm init -y;
         npm install bash-language-server-4.7.0.tgz
+        rm bash-language-server-4.7.0.tgz
         )
         ln -sf  ~/.local/share/nvim/mason/packages/bash-language-server/node_modules/.bin/bash-language-server ~/.local/share/nvim/mason/bin/bash-language-server
         ```
@@ -546,6 +559,7 @@ This document might not use the latest version of programs and plugins, but at l
         wget https://github.com/rogalmic/vscode-bash-debug/releases/download/untagged-438733f35feb8659d939/bash-debug-0.3.9.vsix
         unzip bash-debug-0.3.9.vsix -d ~/.local/share/nvim/mason/packages/bash-debug-adapter
 
+        // without any space at the start of the lines
         cat <<EOF >> ~/.local/share/nvim/mason/packages/bash-debug-adapter/bash-debug-adapter
         #!/usr/bin/env bash
 
@@ -562,11 +576,17 @@ This document might not use the latest version of programs and plugins, but at l
         tar -zxf tree-sitter-lua-cf0869b9898a2fecb7520c07b2c7335c80538a78.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-lua
         ```
     - [ ] luacheck
+        ```{sh}
+        sudo apt install -y luarocks
+        sudo luarocks install luacheck
+        ```
     - [ ] lua-language-server
         ```{sh}
         wget https://github.com/LuaLS/lua-language-server/releases/download/3.6.11/lua-language-server-3.6.11-linux-x64.tar.gz
         mkdir -p ~/.local/share/nvim/mason/packages/lua-language-server
         tar -xvf lua-language-server*.tar.gz -C ~/.local/share/nvim/mason/packages/lua-language-server
+        
+        // without any space at the start of the lines
         cat <<EOF >> ~/.local/share/nvim/mason/packages/lua-language-server/lua-language-server
         #!/usr/bin/env bash
 
@@ -575,6 +595,13 @@ This document might not use the latest version of programs and plugins, but at l
         chmod +x ~/.local/share/nvim/mason/packages/lua-language-server/lua-language-server
         ln -sf ~/.local/share/nvim/mason/packages/lua-language-server/lua-language-server ~/.local/share/nvim/mason/bin/lua-language-server
         ```
+
+## Initialize empty git repos
+The package manager for neovim (Lazy) does requires the directies under ~/.local/share/nvim/lazy/ to be git repos.
+- [ ] Init git repos
+    ```{sh}
+    find ~/.local/share/nvim/lazy/ -maxdepth 1 -mindepth 1 type d -exec git init -q {} \;
+    ```
 
 ## Font
 - [ ] Font
