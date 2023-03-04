@@ -8,7 +8,6 @@ return {
 		vim.g.aurora_transparent = 1
 		vim.g.aurora_bold = 1
 	end },
-	{ 'rebelot/kanagawa.nvim', lazy=true },
 	{ 'AlexvZyl/nordic.nvim', lazy=true, config = function()
 		require('nordic').setup({
 			telescope = {
