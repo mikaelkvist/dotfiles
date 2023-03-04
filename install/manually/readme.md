@@ -349,9 +349,9 @@ This document might not use the latest version of programs and plugins, but at l
     ```
 - [ ] nvim-dap-ui
     ```{sh}
-    wget https://github.com/rcarriga/nvim-dap-ui/archive/refs/tags/v3.8.0.tar.gz -O nvim-dap-ui-v3.8.0.tar.gz
+    wget https://github.com/rcarriga/nvim-dap-ui/archive/refs/tags/v2.6.0.tar.gz -O nvim-dap-ui-v2.6.0.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/nvim-dap-ui
-    tar -zxf nvim-dap-ui-v3.8.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-dap-ui
+    tar -zxf nvim-dap-ui-v2.6.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-dap-ui
     ```
 - [ ] toggleterm
     ```{sh}
@@ -512,7 +512,6 @@ This document might not use the latest version of programs and plugins, but at l
         debugger and debug adapter
         ```{sh}
         wget https://files.pythonhosted.org/packages/f9/35/325e53d2a75b28777c28e790f84ea1ee45e1ecc00ae76550a53872a541f9/debugpy-1.6.6-py2.py3-none-any.whl
-        wget https://files.pythonhosted.org/packages/1f/19/345c21f6b62acf556c39e4358a22b0ad868fecb462c1041c13513d229b33/debugpy-1.6.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
 
         mkdir -p ~/.local/share/nvim/mason/packages/debugpy
         python3 -m venv ~/.local/share/nvim/mason/packages/debugpy/venv
