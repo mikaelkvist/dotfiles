@@ -280,9 +280,10 @@ This document might not use the latest version of programs and plugins, but at l
     ```
 - [ ] cmp-emoji
     ```{sh}
-    wget https://github.com/hrsh7th/cmp-emoji/archive/91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz -O cmp-path-91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/cmp-path
-    tar -zxf cmp-path-91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/cmp-path
+    wget https://github.com/hrsh7th/cmp-emoji/archive/19075c36d5820253d32e2478b6aaf3734aeaafa0.tar.gz -O cmp-path-19075c36d5820253d32e2478b6aaf3734aeaafa0.tar.gz
+    mkdir -p ~/.local/share/nvim/lazy/cmp-emoji
+
+    tar -zxf cmp-emoji-19075c36d5820253d32e2478b6aaf3734aeaafa0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/cmp-emoji
     ```
 
 ### Neovim tooling plugins
