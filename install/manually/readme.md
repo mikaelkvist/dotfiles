@@ -535,11 +535,6 @@ This document might not use the latest version of programs and plugins, but at l
         chmod +x ~/.local/share/nvim/mason/packages/debugpy/debugpy-adapter
         ln -sf ~/.local/share/nvim/mason/packages/debugpy/debugpy ~/.local/share/nvim/mason/bin/debugpy 
         ln -sf ~/.local/share/nvim/mason/packages/debugpy/debugpy-adapter ~/.local/share/nvim/mason/bin/debugpy-adapter
-
-        // debugpy need to be installed here aswell
-        mkdir ~/.virtualenvs
-        python3 -m venv ~/.virtualenvs/debugpy
-        ~/.virtualenvs/debugpy/bin/python -m pip install debugpy-1.6.6*.whl
         ```
 - [ ] bash development
     - [ ] bash grammar for tree-sitter

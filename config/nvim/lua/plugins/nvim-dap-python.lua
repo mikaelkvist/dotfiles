@@ -5,7 +5,8 @@ M.dependencies = {
 }
 
 M.config = function()
-	require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
+	-- make sure this matches with Mason installation
+	require('dap-python').setup('~/.local/share/nvim/mason/packages/debugpy/venv/bin/python')
 end
 
 return M
