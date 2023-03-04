@@ -4,7 +4,7 @@ M.dependencies = {
 	'hrsh7th/nvim-cmp',
 	'hrsh7th/cmp-nvim-lsp',
 	{ 'folke/neodev.nvim', config = true },
-	{ 'SmiteshP/nvim-navic' },
+	'SmiteshP/nvim-navic',
 }
 
 M.init = function()

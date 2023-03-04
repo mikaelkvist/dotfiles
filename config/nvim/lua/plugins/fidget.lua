@@ -7,11 +7,9 @@ M.dependencies = {
 M.opts = {
 	text = {
 		spinner = 'dots',
-		-- spinner = 'dots_pulse',
 	},
 	window = {
 		blend = 0,
-		-- border = 'rounded',
 	}
 }
 

@@ -2,7 +2,7 @@ local M = { 'nvim-telescope/telescope.nvim' }
 
 M.dependencies = {
 	'nvim-lua/plenary.nvim',
-	{ 'nvim-telescope/telescope-ui-select.nvim' }
+	'nvim-telescope/telescope-ui-select.nvim'
 }
 
 M.config = function()

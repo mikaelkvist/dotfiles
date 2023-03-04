@@ -1,4 +1,5 @@
-local M = { 'rcarriga/nvim-dap-ui', tag = "v2.6.0" }
+-- local M = { 'rcarriga/nvim-dap-ui', tag = "v2.6.0" }
+local M = { 'rcarriga/nvim-dap-ui', tag = "v3.8.0" }
 
 M.dependencies = {
 	'mfussenegger/nvim-dap',
