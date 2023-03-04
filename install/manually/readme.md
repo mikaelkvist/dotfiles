@@ -193,22 +193,6 @@ This document might not use the latest version of programs and plugins, but at l
     mkdir -p ~/.local/share/nvim/lazy/nvim-colorizer.lua
     tar -zxf nvim-colorizer.lua-36c610a9717cc9ec426a07c8e6bf3b3abcb139d6.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-colorizer.lua
     ```
-- [ ] nvim-treesitter
-    Tree sitter is used for syntax highlighting in Neovim.
-    - [ ] nvim plugin
-        ```{sh}
-        wget https://github.com/nvim-treesitter/nvim-treesitter/archive/refs/tags/v0.8.5.2.tar.gz -O nvim-treesitter-v0.8.5.2.tar.gz
-        mkdir -p ~/.local/share/nvim/lazy/nvim-treesitter
-        tar -zxf nvim-treesitter-v0.8.5.2.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-treesitter
-        mkdir -p ~/.local/share/nvim/nvim-treesitter/source
-        ```
-    - [ ] tree-sitter cli
-        ```{sh}
-        wget https://github.com/tree-sitter/tree-sitter/releases/download/v0.20.7/tree-sitter-linux-x64.gz
-        gzip -d tree-sitter-linux-x64.gz
-        chmod +x tree-sitter-linux-x64
-        sudo mv tree-sitter-linux-x64 /usr/local/bin/tree-sitter
-        ```
 
 ### Neovim git plugins
 - [ ] diffview
@@ -425,18 +409,6 @@ This document might not use the latest version of programs and plugins, but at l
         )
         ```
 - [ ] c/c++ development
-    - [ ] c grammar for tree-sitter
-        ```{sh}
-        wget https://github.com/tree-sitter/tree-sitter-c/archive/refs/tags/v0.20.2.tar.gz -O tree-sitter-c-v0.20.2.tar.gz
-        mkdir -p ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-c
-        tar -zxf tree-sitter-c-v0.20.2.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-c
-        ```
-    - [ ] cpp grammar for tree-sitter
-        ```{sh}
-        wget https://github.com/tree-sitter/tree-sitter-cpp/archive/refs/tags/v0.20.0.tar.gz -O tree-sitter-cpp-v0.20.0.tar.gz
-        mkdir -p ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-cpp
-        tar -zxf tree-sitter-cpp-v0.20.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-cpp
-        ```
     - [ ] gcc
         ```{sh}
         sudo apt install -y gcc
@@ -472,12 +444,6 @@ This document might not use the latest version of programs and plugins, but at l
         ln -sf ~/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7 ~/.local/share/nvim/mason/bin/OpenDebugAD7
         ```
 - [ ] python development
-    - [ ] python grammar for tree-sitter
-        ```{sh}
-        wget https://github.com/tree-sitter/tree-sitter-python/archive/refs/tags/v0.20.0.tar.gz -O tree-sitter-python-v0.20.0.tar.gz
-        mkdir -p ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-python
-        tar -zxf tree-sitter-python-v0.20.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-python
-        ```
     - [ ] pip
         ```{sh}
         sudo apt install -y pip
@@ -536,12 +502,6 @@ This document might not use the latest version of programs and plugins, but at l
         ln -sf ~/.local/share/nvim/mason/packages/debugpy/debugpy-adapter ~/.local/share/nvim/mason/bin/debugpy-adapter
         ```
 - [ ] bash development
-    - [ ] bash grammar for tree-sitter
-        ```{sh}
-        wget https://github.com/tree-sitter/tree-sitter-bash/archive/refs/tags/v0.19.0.tar.gz -O tree-sitter-bash-v0.19.0.tar.gz
-        mkdir -p ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-bash
-        tar -zxf tree-sitter-bash-v0.19.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-bash
-        ```
     - [ ] shellcheck
         ```{sh}
         sudo apt install -y shellcheck
@@ -576,12 +536,6 @@ This document might not use the latest version of programs and plugins, but at l
         ln -sf ~/.local/share/nvim/mason/packages/bash-debug-adapter/bash-debug-adapter ~/.local/share/nvim/mason/bin/bash-debug-adapter
         ```
 - [ ] lua development
-    - [ ] lua grammar for tree-sitter
-        ```{sh}
-        wget https://github.com/tjdevries/tree-sitter-lua/archive/cf0869b9898a2fecb7520c07b2c7335c80538a78.tar.gz -O tree-sitter-lua-cf0869b9898a2fecb7520c07b2c7335c80538a78.tar.gz
-        mkdir -p ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-lua
-        tar -zxf tree-sitter-lua-cf0869b9898a2fecb7520c07b2c7335c80538a78.tar.gz --strip-components 1 -C ~/.local/share/nvim/nvim-treesitter/source/tree-sitter-lua
-        ```
     - [ ] luacheck
         ```{sh}
         sudo apt install -y luarocks
