@@ -41,15 +41,8 @@ M.config = function()
 		},
 		filetype = "sh",
 	}
-	parser_configs.fish = {
-		install_info = {
-			url = "~/.local/share/nvim/nvim-treesitter/source/tree-sitter-fish",
-			files = { "src/parser.c" },
-		},
-		filetype = "fish",
-	}
 	require('nvim-treesitter.configs').setup({
-		ensure_installed = { "c", "cpp", "python", "lua", "bash", "fish", },
+		ensure_installed = { "c", "cpp", "python", "lua", "bash" },
 		sync_install = true,
 		auto_install = false,
 		parser_install_dir = '~/.local/share/nvim/nvim-treesitter'
