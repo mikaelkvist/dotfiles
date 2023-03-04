@@ -325,12 +325,6 @@ This document might not use the latest version of programs and plugins, but at l
     mkdir -p ~/.local/share/nvim/lazy/nvim-dap-python
     tar -zxf nvim-dap-python-65ccab83fb3d0b29ead6c765c1c52a1ed49592e8.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-dap-python
     ```
-- [ ] nvim-dap-virtual-text
-    ```{sh}
-    wget https://github.com/theHamsta/nvim-dap-virtual-text/archive/8db23ea51203b5f00ad107a0cef7e0b2d7a0476c.tar.gz -O nvim-dap-virtual-text-8db23ea51203b5f00ad107a0cef7e0b2d7a0476c.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/nvim-dap-virtual-text
-    tar -zxf nvim-dap-virtual-text-8db23ea51203b5f00ad107a0cef7e0b2d7a0476c.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nvim-dap-virtual-text
-    ```
 - [ ] nvim-dap-ui
     ```{sh}
     wget https://github.com/rcarriga/nvim-dap-ui/archive/refs/tags/v2.6.0.tar.gz -O nvim-dap-ui-v2.6.0.tar.gz
