@@ -240,12 +240,6 @@ This document might not use the latest version of programs and plugins, but at l
     mkdir -p ~/.local/share/nvim/lazy/nordic.nvim
     tar -zxf nordic.nvim-b4dbc727ec33f88d2b245967873a8c490037d01b.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/nordic.nvim
     ```
-- [ ] kanagawa
-    ```{sh}
-    wget https://github.com/rebelot/kanagawa.nvim/archive/4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz -O kanagawa.nvim-4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz
-    mkdir -p ~/.local/share/nvim/lazy/kanagawa.nvim
-    tar -zxf kanagawa.nvim-4c8d48726621a7f3998c7ed35b2c2535abc22def.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/kanagawa.nvim
-    ```
 - [ ] aurora
     ```{sh}
     wget https://github.com/ray-x/aurora/archive/7c1be58365428ef18c3621bacc5aaf188f8a4b9e.tar.gz -O aurora-7c1be58365428ef18c3621bacc5aaf188f8a4b9e.tar.gz
@@ -281,6 +275,12 @@ This document might not use the latest version of programs and plugins, but at l
 - [ ] cmp-path
     ```{sh}
     wget https://github.com/hrsh7th/cmp-path/archive/91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz -O cmp-path-91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz
+    mkdir -p ~/.local/share/nvim/lazy/cmp-path
+    tar -zxf cmp-path-91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/cmp-path
+    ```
+- [ ] cmp-emoji
+    ```{sh}
+    wget https://github.com/hrsh7th/cmp-emoji/archive/91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz -O cmp-path-91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/cmp-path
     tar -zxf cmp-path-91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/cmp-path
     ```
