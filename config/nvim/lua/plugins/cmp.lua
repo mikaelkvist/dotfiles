@@ -7,7 +7,9 @@ M.dependencies = {
 	'hrsh7th/cmp-cmdline',
 	'L3MON4D3/Luasnip',
 	'saadparwaiz1/cmp_luasnip',
+	'hrsh7th/cmp-emoji',
 }
+
 M.config = function()
 	vim.o.completeopt = 'menuone,noselect'
 	local cmp = require('cmp')
@@ -38,6 +40,7 @@ M.config = function()
 			{ name = 'buffer' },
 			{ name = 'path' },
 			{ name = 'luasnip' },
+			{ name = 'emoji' },
 		}),
 		window = {
 			documentation 	= cmp.config.window.bordered(),
