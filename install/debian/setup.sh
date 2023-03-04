@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+# NOTE: not up to date
+#
 # Execute as users (not root)
 
 # Apt

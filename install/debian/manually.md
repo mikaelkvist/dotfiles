@@ -20,7 +20,7 @@ This document might not use the latest version of programs and plugins, but at l
 ## Dotfiles
 - [ ] Dotfiles
     ```{sh}
-    git clone https://github.com/mikaelkvist/dotfiles
+    git clone --branch v1.0.0 https://github.com/mikaelkvist/dotfiles
     sudo cp dotfiles/tmux.conf ~/.tmux.conf
     sudo cp -r dotfiles/config/* ~/.config/.
     sudo chown -R ${USER}:${USER} ~/.config

@@ -1,5 +1,7 @@
 FROM ubuntu:22.04
 
+# NOTE: not up to date
+
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update 
