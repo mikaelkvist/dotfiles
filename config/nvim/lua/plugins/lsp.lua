@@ -23,7 +23,7 @@ M.config = function()
 
 	lsp_defaults.capabilities = vim.tbl_deep_extend('force', lsp_defaults.capabilities, caps)
 
-	local on_attach = function (client, bufnr)
+	local on_attach = function(client, bufnr)
 		if client.server_capabilities.documentSymbolProvider then
 			navic.attach(client, bufnr)
 		end
@@ -62,7 +62,7 @@ M.config = function()
 end
 
 M.keys = {
-	{ '<leader>h', '<cmd>lua vim.lsp.buf.hover()<cr>', desc = 'Open float' },
+	{ '<leader>h', '<cmd>lua vim.lsp.buf.hover()<cr>', desc = 'Hover info' },
 }
 
 return M
