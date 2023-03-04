@@ -229,6 +229,19 @@ This document might not use the latest version of programs and plugins, but at l
     mkdir -p ~/.local/share/nvim/lazy/gitsigns.nvim
     tar -zxf gitsigns.nvim-v0.6.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/gitsigns.nvim
     ```
+### Neovim snippets plugins
+- [ ] Luasnip
+    ```{sh}
+    wget https://github.com/L3MON4D3/Luasnip/archive/refs/tags/v1.2.1.tar.gz -O Luasnip-v1.2.1.tar.gz
+    mkdir -p ~/.local/share/nvim/lazy/Luasnip
+    tar -zxf Luasnip-v1.2.1.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/Luasnip
+    ```
+- [ ] cmp_luasnip
+    ```{sh}
+    wget https://github.com/saadparwaiz1/cmp_luasnip/archive/18095520391186d634a0045dacaa346291096566.tar.gz -O cmp_luasnip-18095520391186d634a0045dacaa346291096566.tar.gz
+    mkdir -p ~/.local/share/nvim/lazy/cmp_luasnip
+    tar -zxf cmp_luasnip-18095520391186d634a0045dacaa346291096566.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/cmp_luasnip
+    ```
 
 ### Neovim colorscheme plugins
 - [ ] gruvbox

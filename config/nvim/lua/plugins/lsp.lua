@@ -3,7 +3,6 @@ local M = { 'neovim/nvim-lspconfig' }
 M.dependencies = {
 	'hrsh7th/nvim-cmp',
 	'hrsh7th/cmp-nvim-lsp',
-	-- { 'folke/neoconf.nvim', config = true },
 	{ 'folke/neodev.nvim', config = true },
 	{ 'SmiteshP/nvim-navic' },
 }
