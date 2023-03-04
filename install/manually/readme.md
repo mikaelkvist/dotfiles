@@ -81,9 +81,9 @@ This document might not use the latest version of programs and plugins, but at l
 - [ ] lazy
     Neovim plugin manager.
     ```{sh}
-    wget https://github.com/folke/lazy.nvim/archive/refs/tags/v9.8.5.tar.gz -O lazy.nvim-v9.8.5.tar.gz
+    wget https://github.com/folke/lazy.nvim/archive/refs/tags/v9.10.0.tar.gz -O lazy.nvim-v9.10.0.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/lazy.nvim
-    tar -zxf lazy.nvim-v9.8.5.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/lazy.nvim
+    tar -zxf lazy.nvim-v9.10.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/lazy.nvim
     ```
 - [ ] neovim-session-manager
     Save and restore neovim sessions.
@@ -110,16 +110,16 @@ This document might not use the latest version of programs and plugins, but at l
 - [ ] neo-tree
     Directory tree explorer.
     ```{sh}
-    wget https://github.com/nvim-neo-tree/neo-tree.nvim/archive/refs/tags/2.51.tar.gz -O neo-tree.nvim-2.51.tar.gz
+    wget https://github.com/nvim-neo-tree/neo-tree.nvim/archive/refs/tags/2.52.tar.gz -O neo-tree.nvim-2.52.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/neo-tree.nvim
-    tar -zxf neo-tree.nvim-2.51.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/neo-tree.nvim
+    tar -zxf neo-tree.nvim-2.52.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/neo-tree.nvim
     ```
 - [ ] bufferline 
     View buffers as tabs.
     ```{sh}
-    wget https://github.com/akinsho/bufferline.nvim/archive/refs/tags/v3.3.0.tar.gz -O bufferline.nvim-v3.3.0.tar.gz
+    wget https://github.com/akinsho/bufferline.nvim/archive/refs/tags/v3.5.0.tar.gz -O bufferline.nvim-v3.5.0.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/bufferline.nvim
-    tar -zxf bufferline.nvim-v3.3.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/bufferline.nvim
+    tar -zxf bufferline.nvim-v3.5.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/bufferline.nvim
     ```
 - [ ] lualine
     Customizable status bar.
@@ -138,9 +138,9 @@ This document might not use the latest version of programs and plugins, but at l
 - [ ] which-key
     Show set keymaps.
     ```{sh}
-    wget https://github.com/folke/which-key.nvim/archive/refs/tags/v1.1.1.tar.gz -O which-key.nvim-v1.1.1.tar.gz
+    wget https://github.com/folke/which-key.nvim/archive/refs/tags/v1.2.0.tar.gz -O which-key.nvim-v1.2.0.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/which-key.nvim
-    tar -zxf which-key.nvim-v1.1.1.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/which-key.nvim
+    tar -zxf which-key.nvim-v1.2.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/which-key.nvim
     ```
 - [ ] nui
     Neovim UI library used by e.g. neo-tree
@@ -270,9 +270,9 @@ This document might not use the latest version of programs and plugins, but at l
     ```
 - [ ] tokyonight
     ```{sh}
-    wget https://github.com/folke/tokyonight.nvim/archive/refs/tags/v1.4.0.tar.gz -O tokyonight.nvim-v1.4.0.tar.gz
+    wget https://github.com/folke/tokyonight.nvim/archive/refs/tags/v1.6.0.tar.gz -O tokyonight.nvim-v1.6.0.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/tokyonight.nvim
-    tar -zxf tokyonight.nvim-v1.4.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/tokyonight.nvim
+    tar -zxf tokyonight.nvim-v1.6.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/tokyonight.nvim
     ```
 
 ### Neovim completion plugins
@@ -325,9 +325,9 @@ This document might not use the latest version of programs and plugins, but at l
     ```
 - [ ] neodev
     ```{sh}
-    wget https://github.com/folke/neodev.nvim/archive/refs/tags/v2.4.0.tar.gz -O neodev.nvim-v2.4.0.tar.gz
+    wget https://github.com/folke/neodev.nvim/archive/refs/tags/v2.4.1.tar.gz -O neodev.nvim-v2.4.1.tar.gz
     mkdir -p ~/.local/share/nvim/lazy/neodev.nvim
-    tar -zxf neodev.nvim-v2.4.0.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/neodev.nvim
+    tar -zxf neodev.nvim-v2.4.1.tar.gz --strip-components 1 -C ~/.local/share/nvim/lazy/neodev.nvim
     ```
 - [ ] nvim-dap  
     ```{sh}
