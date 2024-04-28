@@ -62,6 +62,19 @@ M.config = function()
 		}
 	}
 
+	dap.configurations.dart = {
+		{
+			type = "dart",
+			request = "launch",
+			name = "Launch Dart Program",
+			-- The nvim-dap plugin populates this variable with the filename of the current buffer
+			program = "${file}",
+			-- The nvim-dap plugin populates this variable with the editor's current working directory
+			cwd = "${workspaceFolder}",
+			args = {"--help"}, -- Note for Dart apps this is args, for Flutter apps toolArgs
+		}
+	}
+
 	vim.api.nvim_set_hl(0, "red", { fg = "#ff0000" })
 	vim.api.nvim_set_hl(0, "orange", { fg = "#C17D11" })
 

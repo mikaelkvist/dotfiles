@@ -2,7 +2,8 @@ local M = { 'nvim-telescope/telescope.nvim' }
 
 M.dependencies = {
 	'nvim-lua/plenary.nvim',
-	'nvim-telescope/telescope-ui-select.nvim'
+	'nvim-telescope/telescope-ui-select.nvim',
+	"nvim-telescope/telescope-file-browser.nvim",
 }
 
 M.config = function()
@@ -21,7 +22,8 @@ M.config = function()
 		end
 		vim.cmd('stopinsert')
 	  else
-		actions.file_edit(prompt_bufnr)
+		-- actions.file_edit(prompt_bufnr)
+		actions.select_default(prompt_bufnr)
 	  end
 	end
 
@@ -52,6 +54,7 @@ M.config = function()
 		},
 	})
 	telescope.load_extension('ui-select')
+	telescope.load_extension('file_browser')
 end
 
 M.keys = {

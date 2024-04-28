@@ -4,14 +4,12 @@ ZSH_THEME="agnoster" # set by `omz`
 plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
-	zsh-vi-mode
 	z
  )
 
 source $ZSH/oh-my-zsh.sh
 
-alias vim=nvim
-alias bat="batcat --pager=never"
+alias bat="batcat --paging=never -p"
 alias gitt='git log --oneline --graph --decorate --all'
 
 bindkey -- '^O' 'clear-screen'
@@ -30,7 +28,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias luamake=/luamake
-alias bat="batcat --paging=never"
-
 
 export EDITOR=vim
+export TERMINAL=alacritty
+export AUTO_DISABLE_TITLE='true'
+export DISABLE_AUTO_TITLE='true'
+export PATH=$PATH:/usr/local/go/bin
+export SOFT_SERVE_DATA_PATH=/var/lib/soft-serve soft serve
