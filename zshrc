@@ -5,6 +5,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
 	z
+    direnv
  )
 
 source $ZSH/oh-my-zsh.sh
@@ -35,3 +36,7 @@ export AUTO_DISABLE_TITLE='true'
 export DISABLE_AUTO_TITLE='true'
 export PATH=$PATH:/usr/local/go/bin
 export SOFT_SERVE_DATA_PATH=/var/lib/soft-serve soft serve
+
+# Tab completion functions goes here
+export fpath=(~/.zsh/functions $fpath)
+autoload -U compinit && compinit
