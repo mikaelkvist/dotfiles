@@ -1,0 +1,20 @@
+- name: Bootstrap development environment
+  hosts: localhost
+
+  tasks:
+  - name: Install packages with api
+    become: yes
+    ansible.builtin.apt:
+        name:
+            - git
+            - tmux
+            - stow
+        state: present
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Run stow
+    shell: "stow . --target {{ ansible_env.HOME }} --verbose=2"
+    args:
+        chdir: "{{ playbook_dir }}/../src"
+    register: result
+    changed_when: 'result.stderr is search("LINK: ")'
