@@ -1,0 +1,9 @@
+core_packages:
+    - git
+    - stow
+    - fish
+    - fzf
+    - bat
+    - ripgrep
+    - jq
+    - fd-find

@@ -1,0 +1,5 @@
+- name: Debian - Install Fish
+  become: yes
+  apt:
+    name: fish
+    state: present

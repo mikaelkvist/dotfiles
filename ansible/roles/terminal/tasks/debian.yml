@@ -1,0 +1,5 @@
+- name: Debian - Install Alacritty
+  become: yes
+  apt:
+    name: alacritty
+    state: present

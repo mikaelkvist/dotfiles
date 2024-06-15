@@ -1,0 +1,13 @@
+- name: Debian - Update apt
+  become: yes
+  ansible.builtin.apt:
+      update_cache: true
+      upgrade: yes
+
+- name: Debian - Install
+  become: yes
+  ansible.builtin.apt:
+    name: "{{ core_packages }}"
+    state: present
+
+      

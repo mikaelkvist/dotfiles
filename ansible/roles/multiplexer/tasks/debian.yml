@@ -1,0 +1,5 @@
+- name: Debian - Install Tmux
+  become: yes
+  apt:
+      name: tmux
+      state: present

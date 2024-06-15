@@ -1,35 +1,8 @@
-- name: Bootstrap development environment
+- name: Setup Development Environment
   hosts: localhost
-
-  tasks:
-  - name: Install packages with api
-    become: yes
-    ansible.builtin.apt:
-        name:
-            - git
-            - tmux
-            - stow
-        state: present
-    when: ansible_distribution == "Ubuntu"
-
-  - name: Run stow
-    shell: "stow . --target {{ ansible_env.HOME }} --verbose=2"
-    args:
-        chdir: "{{ playbook_dir }}/../src"
-    register: result
-    changed_when: 'result.stderr is search("LINK: ")'
-  
-  - name: Tmux Package Manager
-    ansible.builtin.git:
-        repo: https://github.com/tmux-plugins/tpm
-        dest: "{{ ansible_env.HOME }}/.tmux/plugin/tpm"
-    environment:
-        TMUX_PLUGIN_MANAGER_PATH: "{{ ansible_env.HOME }}/.tmux/plugin/tpm"
-
-  - name: Install Tmux plugins
-    shell: "./install_plugins"
-    args:
-        chdir: "{{ ansible_env.HOME }}/.tmux/plugin/tpm/bin"
-    register: result
-    changed_when: 'result.stdout is search("Installing ")'
-    
+  roles:
+    - core
+    - dotfiles
+    - shell
+    - terminal
+    - multiplexer
