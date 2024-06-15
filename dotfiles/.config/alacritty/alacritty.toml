@@ -12,17 +12,17 @@ padding.y = 5
 
 [font]
 
-normal.family = "Operator Mono Book"
-normal.style = "Regular"
+normal.family = "CaskaydiaMono Nerd Font Mono"
+normal.style = "SemiLight"
 
-bold.family = "Operator Mono Bold"
-bold.style = "Bold"
+bold.family = "CaskaydiaMono Nerd Font Mono"
+bold.style = "SemiBold"
 
-italic.family = "Operator Mono Medium"
-italic.style = "Italic"
+italic.family = "CaskaydiaMono Nerd Font Mono"
+italic.style = "SemiLight Italic"
 
-bold_italic.family = "Operator Mono Medium"
-bold_italic.style = "Bold Italic"
+bold_italic.family = "CaskaydiaMono Nerd Font Mono"
+bold_italic.style = "SemiBold Italic"
 
 size = 16
 

@@ -1,0 +1,13 @@
+- name: Check Font
+  ansible.builtin.stat:
+      path: "{{ ansible_env.HOME }}/.local/share/fonts/CaskaydiaMono*"
+  register: st
+
+- name: Install Font
+  ansible.builtin.unarchive:
+      src: "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaMono.zip"
+      dest: "{{ ansible_env.HOME }}/.local/share/fonts/"
+      remote_src: yes
+  when: not st.stat.exists
+
+
