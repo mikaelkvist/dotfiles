@@ -3,16 +3,18 @@
   when: ansible_facts['os_family']|lower == 'debian'
 
 - name: Install Tmux Package Manager
-  git:
+  ansible.builtin.git:
     repo: "https://github.com/tmux-plugins/tpm"
     dest: "{{ ansible_env.HOME }}/.tmux/plugins/tpm"
     depth: 1
     version: "v3.1.0"
 
 - name: Install Tmux plugins
-  shell: "./install_plugins"
+  ansible.builtin.shell: "./install_plugins"
   args:
       chdir: "{{ ansible_env.HOME }}/.tmux/plugins/tpm/bin"
+  environment:
+      TMUX_PLUGIN_MANAGER_PATH: "{{ ansible_env.HOME }}/.tmux/plugin/tpm"
   register: res
   changed_when: 'res.stdout is search("Installing ")'
 
