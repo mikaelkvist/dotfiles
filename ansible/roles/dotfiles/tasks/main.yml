@@ -1,7 +1,7 @@
 - name: Sync dotfiles
   shell: "stow . --target {{ ansible_env.HOME }} --verbose=2"
   args:
-      chdir: "{{ playbook_dir }}/../src"
+      chdir: "{{ playbook_dir }}/../dotfiles"
   register: res
   changed_when: 'res.stderr is search("LINK: ")'
  
