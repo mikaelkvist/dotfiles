@@ -1,3 +1,22 @@
+""" Plugins
+" =============================================================================
+call plug#begin()
+
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'w0rp/ale'
+
+call plug#end()
+
+let g:tmux_navigator_no_mappings = 1
+noremap <silent> <c-h> :<C-U>TmuxNavigateLeft<cr>
+noremap <silent> <c-j> :<C-U>TmuxNavigateDown<cr>
+noremap <silent> <c-k> :<C-U>TmuxNavigateUp<cr>
+noremap <silent> <c-l> :<C-U>TmuxNavigateRight<cr>
+noremap <silent> <c-p> :<C-U>TmuxNavigatePrevious<cr>
+
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+
 """ FUNCTIONS
 " =============================================================================
 function! GREP(args) abort
@@ -73,8 +92,11 @@ vmap > >gv
 
 """ Visual
 " =============================================================================
-highlight VertSplit cterm=NONE
-set laststatus=0 " Hide statusline
+hi VertSplit cterm=none ctermfg=none term=none
+hi StatusLine cterm=none ctermfg=none term=none
+hi StatusLineNC cterm=none ctermfg=none term=none
+set fillchars=stl:-,stlnc:-,vert:\|,fold:-,diff:-
+set laststatus=2 " Hide statusline
 
 " trailing whitespace
 highlight SpaceError ctermbg=DarkRed guibg=DarkRed
@@ -83,31 +105,4 @@ autocmd BufWinEnter * match SpaceError /\s\+\%#\@<!$/
 autocmd InsertEnter * match SpaceError /\s\+\%#\@<!$/
 autocmd InsertLeave * match SpaceError /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-""" Plugins
-" =============================================================================
-
-" Vundle config
-set nocompatible              " be iMproved, required
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'christoomey/vim-tmux-navigator'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-let g:tmux_navigator_no_mappings = 1
-noremap <silent> <c-h> :<C-U>TmuxNavigateLeft<cr>
-noremap <silent> <c-j> :<C-U>TmuxNavigateDown<cr>
-noremap <silent> <c-k> :<C-U>TmuxNavigateUp<cr>
-noremap <silent> <c-l> :<C-U>TmuxNavigateRight<cr>
-noremap <silent> <c-p> :<C-U>TmuxNavigatePrevious<cr>
-
-
 
