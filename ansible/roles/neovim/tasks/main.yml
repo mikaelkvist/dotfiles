@@ -1,0 +1,9 @@
+- name: Check Installed
+  ansible.builtin.command: which nvim
+  changed_when: false
+  failed_when: false
+  register: is_neovim_installed
+
+- name: Install Neovim
+  include: debian.yml
+  when: is_neovim_installed.rc != 0 and ansible_facts['os_family']|lower == 'debian'
