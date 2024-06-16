@@ -5,12 +5,18 @@ M.dependencies = {
 }
 
 M.opts = {
-	text = {
-		spinner = 'dots',
-	},
-	window = {
-		blend = 0,
-	}
+    progress = {
+        display = {
+            progress_icon = {
+                pattern = 'dots',
+            },
+        },
+    },
+    notification = {
+        window = {
+            winblend = 0,
+        },
+    },
 }
 
 return M

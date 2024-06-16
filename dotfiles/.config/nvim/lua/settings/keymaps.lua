@@ -10,3 +10,6 @@ vim.keymap.set('n', '<leader>y', '"*y', {})
 vim.keymap.set('n', 'F', '<cmd>Format<cr>', {})
 
 vim.keymap.set('n', '<leader>gq', '<cmd>lua vim.lsp.buf.format({async = false})<cr>', {})
+
+vim.keymap.set('n', '<leader>e', '<cmd>Lex<cr>', {})
+vim.keymap.set('n', '<leader>w', '<cmd>qall!<cr>', {})

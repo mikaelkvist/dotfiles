@@ -7,3 +7,20 @@
 - name: Install Neovim
   include: debian.yml
   when: is_neovim_installed.rc != 0 and ansible_facts['os_family']|lower == 'debian'
+
+- name: Check Lazy Installed
+  ansible.builtin.stat:
+      path: "~/.local/share/nvim/lazy/lazy.nvim"
+  register: lazy_dir
+
+- name: Install Lazy
+  ansible.builtin.git:
+      repo: "https://github.com/folke/lazy.nvim.git"
+      dest: "~/.local/share/nvim/lazy/lazy.nvim"
+      version: "stable"
+  when: not lazy_dir.stat.exists
+
+- name: Install Neovim Plugins
+  ansible.builtin.shell: 'nvim --headless "+Lazy! sync" +qa'
+
+
