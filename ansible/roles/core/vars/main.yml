@@ -7,3 +7,4 @@ core_packages:
     - ripgrep
     - jq
     - fd-find
+    - direnv
