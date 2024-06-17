@@ -3,7 +3,7 @@
 call plug#begin()
 
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -87,6 +87,10 @@ nnoremap <leader><space> :call ToggleQuickFix()<cr>
 nnoremap <leader>w :qall!<cr>
 nnoremap <leader>e :Lex<cr>
 
+nnoremap <leader>gd :ALEGoToDefinition<cr>
+nnoremap <leader>gr :ALEFindReferences<cr>
+nnoremap <leader>k  :ALEHover<cr>
+
 vmap < <gv
 vmap > >gv
 
@@ -96,7 +100,6 @@ hi VertSplit cterm=none ctermfg=none term=none
 hi StatusLine cterm=none ctermfg=none term=none
 hi StatusLineNC cterm=none ctermfg=none term=none
 set fillchars=stl:-,stlnc:-,vert:\|,fold:-,diff:-
-set laststatus=2 " Hide statusline
 
 " trailing whitespace
 highlight SpaceError ctermbg=DarkRed guibg=DarkRed

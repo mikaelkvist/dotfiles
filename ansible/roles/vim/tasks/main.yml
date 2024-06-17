@@ -1,0 +1,13 @@
+- name: Check Plugin Manager Installed
+  ansible.builtin.stat:
+      path: "~/.vim/autoload/plug.vim"
+  register: plug_dir
+
+- name: Install Vim Plug
+  ansible.builtin.get_url:
+      url: "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+      dest: "~/.vim/autoload/plug.vim"
+  when: not plug_dir.stat.exists
+
+- name: Install Vim Plugins
+  ansible.builtin.shell: 'vim +PlugUpdate +qa'
