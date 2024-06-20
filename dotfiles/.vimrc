@@ -25,7 +25,7 @@ function! GREP(args) abort
        let l:pattern = a:args
     endif
     let l:tmpfile = tempname()
-    execute 'silent !rg --line-number ' .. l:pattern .. ' | fzf  --multi --preview "batcat --color=always {}" --preview-window=up > ' .. fnameescape(l:tmpfile)
+    execute 'silent !rg --column --line-number --no-heading --smart-case ' .. l:pattern .. ' | fzf --delimiter : --multi --preview "batcat --theme=1337 --style=numbers,changes --color always {1} --highlight-line {2}" --preview-window=right > ' .. fnameescape(l:tmpfile)
     try
         execute 'cfile ' .. l:tmpfile
         let l:qflist = getqflist()
@@ -40,7 +40,7 @@ endfunction
 
 function! FZF() abort
     let l:tmpfile = tempname()
-    execute 'silent !rg --files | fzf --multi --preview "batcat --color=always {}" --preview-window=up' . '| awk ''{ print $1":1:0" }'' > ' .. fnameescape(l:tmpfile)
+    execute 'silent !rg --files | fzf --multi --preview "batcat --theme=1337 --style=numbers,changes --color always {}" --preview-window=right' . '| awk ''{ print $1":1:0" }'' > ' .. fnameescape(l:tmpfile)
     try
         execute 'cfile ' .. l:tmpfile
         let l:qflist = getqflist()
