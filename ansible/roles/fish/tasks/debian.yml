@@ -1,4 +1,4 @@
-- name: Debian - Install Fish
+- name: Install Fish
   become: yes
   apt:
     name: fish

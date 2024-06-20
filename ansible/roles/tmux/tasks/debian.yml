@@ -1,4 +1,4 @@
-- name: Debian - Install Tmux
+- name: Install Tmux
   become: yes
   apt:
       name: tmux

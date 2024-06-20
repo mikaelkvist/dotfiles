@@ -1,4 +1,4 @@
-- name: Debian - Install Alacritty
+- name: Install Alacritty
   become: yes
   apt:
     name: alacritty

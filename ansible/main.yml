@@ -4,8 +4,8 @@
     - core
     - font
     - dotfiles
-    - shell
-    - terminal
-    - multiplexer
+    - fish
+    - alacritty
+    - tmux
     - vim
     - neovim
