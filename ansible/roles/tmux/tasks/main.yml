@@ -14,7 +14,7 @@
   args:
       chdir: "{{ ansible_env.HOME }}/.tmux/plugins/tpm/bin"
   environment:
-      TMUX_PLUGIN_MANAGER_PATH: "{{ ansible_env.HOME }}/.tmux/plugin/tpm"
+      TMUX_PLUGIN_MANAGER_PATH: "{{ ansible_env.HOME }}/.tmux/plugins"
   register: res
   changed_when: 'res.stdout is search("Installing ")'
 
