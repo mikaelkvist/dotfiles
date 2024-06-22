@@ -1,0 +1,44 @@
+window:
+    opacity: 0.9
+    padding:
+        x: 8
+        y: 5
+font:
+    normal:
+        family: "CaskaydiaMono Nerd Font Mono"
+        style: "SemiLight"
+    bold:
+        family: "CaskaydiaMono Nerd Font Mono"
+        style: "SemiBold"
+    italic:
+        family: "CaskaydiaMono Nerd Font Mono"
+        style: "SemiLight Italic"
+    bold_italic:
+        family: "CaskaydiaMono Nerd Font Mono"
+        style: "SemiBold Italic"
+    size: 16
+
+# Colors (Ayu Dark)
+colors:
+    primary:
+        background: '#0A0E14'
+        #foreground: '#B3B1AD'
+        foreground: '#C17D11'
+    normal:
+        black: '#01060E'
+        red: '#EA6C73'
+        green: '#91B362'
+        yellow: '#F9AF4F'
+        blue: '#53BDFA'
+        magenta: '#FAE994'
+        cyan: '#90E1C6'
+        white: '#C7C7C7'
+    bright:
+        black: '#686868'
+        red: '#F07178'
+        green: '#C2D94C'
+        yellow: '#FFB454'
+        blue: '#59C2FF'
+        magenta: '#FFEE99'
+        cyan: '#95E6CB'
+        white: '#FFFFFF'
