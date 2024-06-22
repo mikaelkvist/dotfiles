@@ -6,6 +6,6 @@
     - dotfiles
     - alacritty
     - tmux
-    - fish # install fish after tmux because conf.d/tmux.fish
+    - fish
     - vim
     - virt-manager
