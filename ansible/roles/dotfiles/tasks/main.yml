@@ -4,4 +4,4 @@
       chdir: "{{ playbook_dir }}/../dotfiles"
   register: res
   changed_when: 'res.stderr is search("LINK: ")'
- 
+

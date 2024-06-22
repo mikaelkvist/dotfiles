@@ -9,3 +9,4 @@ core_packages:
     - fd-find
     - direnv
     - curl
+    - make
