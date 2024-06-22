@@ -109,3 +109,5 @@ autocmd InsertEnter * match SpaceError /\s\+\%#\@<!$/
 autocmd InsertLeave * match SpaceError /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+hi ColorColumn ctermbg=Black
+
