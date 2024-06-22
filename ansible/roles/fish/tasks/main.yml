@@ -8,13 +8,9 @@
     name: "{{ ansible_user_id }}"
     shell: "/usr/bin/fish"
 
-- name: Setup Fisher
-  shell: "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
+# Assumes the ~/.config/fish/fish_plugins file exists
+- name: Setup Fish Plugins
+  shell: "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update"
   args:
     executable: "/usr/bin/fish"
 
-# Assumes the ~/.config/fish/fish_plugins file exists
-- name: Install Fish Plugins
-  shell: "fisher update"
-  args:
-    executable: "/usr/bin/fish"
