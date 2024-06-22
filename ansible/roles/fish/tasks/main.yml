@@ -3,11 +3,12 @@
   when: ansible_facts['os_family']|lower == 'debian'
 
 - name: Set User Shell
-  user:
+  become: true
+  ansible.builtin.user:
     name: "{{ ansible_user_id }}"
     shell: "/usr/bin/fish"
 
-- name: Setup Fisher
+-ch  name: Setup Fisher
   shell: "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
   args:
     executable: "/usr/bin/fish"

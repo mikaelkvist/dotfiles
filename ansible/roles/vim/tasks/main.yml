@@ -1,3 +1,14 @@
+- name: Install Vim
+  become: yes
+  ansible.builtin.apt:
+      name: vim
+      state: present
+
+- name: Create Vim Autoload Directory
+  ansible.builtin.file:
+      dest: "{{ ansible_env.HOME }}/.vim/autoload/"
+      state: directory
+
 - name: Check Plugin Manager Installed
   ansible.builtin.stat:
       path: "~/.vim/autoload/plug.vim"

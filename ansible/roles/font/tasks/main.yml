@@ -3,6 +3,11 @@
       path: "{{ ansible_env.HOME }}/.local/share/fonts/CaskaydiaMono*"
   register: st
 
+- name: Create Font Directory
+  ansible.builtin.file:
+      dest: "{{ ansible_env.HOME }}/.local/share/fonts/"
+      state: directory
+
 - name: Install Font
   ansible.builtin.unarchive:
       src: "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaMono.zip"

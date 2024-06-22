@@ -4,8 +4,8 @@
     - core
     - font
     - dotfiles
-    - fish
     - alacritty
     - tmux
+    - fish # install fish after tmux because conf.d/tmux.fish
     - vim
     - virt-manager
